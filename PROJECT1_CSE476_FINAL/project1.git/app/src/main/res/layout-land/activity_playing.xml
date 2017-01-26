@@ -1,0 +1,88 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="edu.msu.simunovi.project1.PlayingActivity"
+    android:background="#ffffff">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/currentPlayerTurn"
+        android:id="@+id/Player1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:id="@+id/horizLayout"
+        android:weightSum="5"
+        android:layout_below="@+id/Player1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/buttonLayout"
+        android:layout_toStartOf="@+id/buttonLayout">
+
+        -- Put the playing area here
+
+
+        <edu.msu.simunovi.project1.PlayingAreaView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/playingAreaView"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:id="@+id/buttonLayout"
+        android:weightSum="4"
+        android:layout_weight="1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/Player1">
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/install"
+            android:id="@+id/install"
+            android:layout_weight="1"
+            android:onClick="onInstallPressed" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/discard"
+            android:id="@+id/discard"
+            android:layout_weight="1"
+            android:onClick="onDiscardPressed" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/openValve"
+            android:id="@+id/openValve"
+            android:layout_weight="1"
+            android:onClick="onOpenValvePressed" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/surrender"
+            android:id="@+id/surrender"
+            android:layout_weight="1"
+            android:onClick="onSurrenderPressed" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+

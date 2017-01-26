@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="edu.msu.simunovi.project1.MainActivity"
+    android:background="#ffffff">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/splash"
+        android:src="@drawable/splash"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/Player1"
+        android:layout_toRightOf="@+id/instructions"
+        android:layout_toEndOf="@+id/instructions" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/Player1"
+        android:paddingRight="15dp"
+        android:text="@string/Player1"
+        android:layout_above="@+id/Player2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/Player2"
+        android:text="@string/Player2"
+        android:layout_below="@+id/editPlayer1"
+        android:layout_alignLeft="@+id/Player1"
+        android:layout_alignStart="@+id/Player1"
+        android:layout_marginTop="10dp" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sizeSelect"
+        android:layout_above="@+id/start"
+        android:layout_alignRight="@+id/editPlayer2"
+        android:layout_alignEnd="@+id/editPlayer2"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start"
+        android:id="@+id/start"
+        android:onClick="onStartGamePress_MainActivity"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/instructions"
+        android:id="@+id/instructions"
+        android:onClick="onHowToPressed"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/start"
+        android:layout_toEndOf="@+id/start" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editPlayer1"
+        android:inputType="text"
+        android:minWidth="40dp"
+        android:layout_above="@+id/editPlayer2"
+        android:layout_toRightOf="@+id/Player2"
+        android:layout_toEndOf="@+id/Player2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editPlayer2"
+        android:inputType="text"
+        android:minWidth="40dp"
+        android:layout_alignLeft="@+id/editPlayer1"
+        android:layout_alignStart="@+id/editPlayer1"
+        android:layout_above="@+id/sizeSelect" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/gridSize"
+        android:text="@string/gridSize"
+        android:layout_below="@+id/editPlayer2"
+        android:layout_alignEnd="@+id/Player2"
+        android:textSize="@dimen/abc_text_size_small_material"
+        android:layout_marginTop="20dp" />
+
+
+</RelativeLayout>
+
+
+
+

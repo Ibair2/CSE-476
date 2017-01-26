@@ -1,0 +1,58 @@
+<resources>
+
+    <string name="app_name">Project 1: Team 11</string>
+
+
+    -- Main Activity, Start Menu, Opening Menu
+    <string name="action_settings">Settings</string>//
+    <string name="player1">Player 1</string>
+    <string name="player2">Player 2</string>
+    <string name="start">Start Game</string>
+    <string name="matrixSize">Pick a Matrix Size</string>
+    <string name="Player1">Player 1:</string>
+    <string name="Player2">Player 2:</string>
+    <string name="TestGameEnd">Test: End</string>
+    <string name="gridSize">Grid Size:</string>
+    <string name="instructions">How To Play STEAMPUNKED</string>
+    <string name="instructionsTitle">How To Play STEAMPUNKED</string>
+    <string name="instructionsExplained">   Steampunked is played by placing pipes on the
+                                            grid with the goal of connecting your start
+                                            pipe with the end pipe, to make the steam disappear.
+
+                                            \n\nA player wins if
+                                            the start and end pipes of the player are
+                                            successfully connected and the Open Valve
+                                            button is pushed, such that no steam appears from the pipes
+                                            of the player pushing the Open Valve button. If steam appears when
+                                    the Open Valve button is pushed, the other player automatically wins.
+                                            Pushing Install will snap a
+                                            pipe to the closest grid square on the playing
+                                            field, as well as line up the pipe rotation
+                                            to the nearest 90 degree alignment multiple when snapping in.
+                                            Pushing Discard will discard the currently selected pipe and
+                                            will produce a new pipe in the
+                                            available pipe pool.
+                                            If a player pushes the Surrender
+                                            button, the player forfeits the
+                                            game. The other player wins automatically
+                                            in this situation.
+
+                                            \n\nPush Start Game to start playing now!
+                                                                                    </string>
+
+
+    -- Playing Activity, Playing area
+    <string name="currentPlayerTurn">P1 or P2 Turn is Now</string>
+    <string name="discard">Discard</string>
+    <string name="openValve">Open Valve</string>
+    <string name="surrender">Surrender </string>
+    <string name="install">Install</string>
+
+    -- Finished Activity, End Game, Finish
+    <string name="endGameResults">The winner is: P1 or P2</string>
+    <string name="playAgain">Play again?</string>
+
+</resources>
+
+
+

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Puzzle bhushanj</string>
+    <string name="contentDes">Picture of the solved puzzle</string>
+    <string name="bottomText">Welcome To Jaiwant\'s Puzzle</string>
+    <string name="start_puzzle">Start Puzzle</string>
+    <string name="hurrah">Hurrah!!!</string>
+    <string name="completed_puzzle">You have completed the puzzle!</string>
+    <string name="shuffle">Shuffle</string>
+</resources>

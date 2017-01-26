@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.msu.bhushanj.jaiwantbhushanmadhatter.HatterActivity">
+
+    <Button
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:text="@string/color_string"
+        android:id="@+id/buttonColor"
+        android:layout_below="@+id/buttonPicture"
+        android:layout_alignEnd="@+id/buttonPicture" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/feather_string"
+        android:id="@+id/checkFeather"
+        android:checked="false"
+        android:layout_below="@+id/spinnerHat"
+        android:layout_alignStart="@+id/buttonPicture"
+        android:layout_alignEnd="@+id/buttonPicture" />
+
+    <Button
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:text="@string/picture_string"
+        android:id="@+id/buttonPicture"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="onPicture" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerHat"
+        android:layout_below="@+id/buttonColor"
+        android:layout_alignStart="@+id/buttonColor"
+        android:layout_alignEnd="@+id/buttonPicture" />
+
+    <edu.msu.bhushanj.jaiwantbhushanmadhatter.HatterView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/hatterView"
+        android:background="@android:color/black"
+        android:layout_marginEnd="169dp"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

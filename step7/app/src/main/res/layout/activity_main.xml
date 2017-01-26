@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.msu.bhushanj.arewethereyetbhushanj.MainActivity"
+    android:layout_gravity="center_horizontal">
+
+    <TextView
+        android:text="@string/dummy2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:layout_above="@+id/textView3"
+        android:layout_alignStart="@+id/textView4" />
+
+    <TextView
+        android:text="@string/Latitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/textView5"
+        android:layout_marginEnd="20dp" />
+
+    <TextView
+        android:text="@string/Longitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2" />
+
+    <TextView
+        android:text="@string/dummy4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView10"
+        android:textSize="12sp"
+        tools:textStyle="italic"
+        android:textIsSelectable="false"
+        android:layout_below="@+id/textView6"
+        android:layout_marginTop="18dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="@string/dummy3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:layout_below="@+id/textView5"
+        android:layout_toEndOf="@+id/textView2" />
+
+    <TextView
+        android:text="@string/dummy1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:layout_above="@+id/textView5"
+        android:layout_alignStart="@+id/textView12" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Provider"
+        android:id="@+id/textView13"
+        android:layout_alignBaseline="@+id/textView4"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignEnd="@+id/textView2" />
+
+    <TextView
+        android:text="@string/newLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView12"
+        android:gravity="left"
+        android:layout_marginTop="30dp"
+        android:textStyle="normal|italic"
+        android:layout_below="@+id/textView11"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:inputType="text"
+        android:layout_below="@+id/textView12"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="@string/dummy5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView11"
+        android:layout_below="@+id/textView10"
+        android:layout_alignStart="@+id/textView10"
+        android:gravity="center_vertical|center_horizontal" />
+
+    <Button
+        android:text="@string/New"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:layout_centerVertical="true"
+        android:layout_alignEnd="@+id/editText"
+        android:onClick="onNew" />
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Are We There Yet bhushanj</string>
+    <string name="Provider">Provider</string>
+    <string name="Latitude">Latitude</string>
+    <string name="Longitude">Longitude</string>
+    <string name="dummy1">Dummy</string>
+    <string name="dummy2">Dummy</string>
+    <string name="dummy3">Dummy</string>
+    <string name="dummy4">Dummy</string>
+    <string name="dummy5">Dummy</string>
+    <string name="newLocation">New Location</string>
+    <string name="New">New</string>
+    <string name="eb1225">Engineering Building</string>
+    <string name="sparty">Spartan Statue</string>
+    <string name="home">McDonel Hall</string>
+    <string name="exception">Failed to communicate with geolocation services</string>
+    <string name="couldnotfind">Unable to locate address</string>
+</resources>
